@@ -1,0 +1,144 @@
+/* Pagina Home */
+#page-home {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-content {
+  height: 90%;
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title h1 {
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+}
+
+.title a {
+  background-color: rgb(65, 105, 225);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: 200ms;
+}
+
+.title a:hover {
+  background-color: rgba(65, 105, 225, 0.9);
+}
+
+.cars {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.car-item {
+  max-width: 25rem;
+  max-height: 50rem;
+  transition: 200ms;
+  padding-bottom: 10px;
+  border: 1px solid #c5c5c5;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: 200ms;
+}
+
+.car-item:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.car-item a {
+  text-decoration: none;
+}
+
+.car-item img {
+  width: 24.5rem;
+  height: 25rem;
+  border-bottom: 1px solid #c5c5c5;
+}
+
+.details {
+  text-align: left;
+  padding: 5px 12px;
+}
+
+.details .car-name {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.details .car-detail {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: #999;
+}
+
+.details .car-price {
+  margin: 30px 0 5px;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 900;
+  color: #666;
+}
+
+.details .car-age {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #999;
+}
+
+@media (min-width: 700px) {
+  .title {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title h1 {
+    margin: 2px 0;
+  }
+
+  .title a {
+    width: 150px;
+    margin-right: 30px;
+  }
+
+  .cars {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .car-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .cars {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  .cars {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

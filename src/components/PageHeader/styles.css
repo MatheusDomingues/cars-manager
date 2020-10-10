@@ -1,0 +1,6 @@
+.page-header {
+  display: inline-block;
+  background-color: silver;
+  position: fixed;
+  top: 0;
+}
