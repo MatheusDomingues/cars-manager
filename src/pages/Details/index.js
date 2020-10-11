@@ -13,15 +13,16 @@ import api from '../../services/api';
 import './styles.css';
 
 function Details() {
-  const [ modalVisible, setModalVisible ] = useState(false);
-  const [ carDetail, setCarDetails ] = useState({});
-  const [ title, setTitle ] = useState('');
-  const [ brand, setBrand ] = useState('');
-  const [ price, setPrice ] = useState('');
-  const [ age, setAge ] = useState();
-  const { carId } = useParams();
-  const history = useHistory();
+  const [ modalVisible, setModalVisible ] = useState(false); // Variável para salvar estado onde mostra o Modal
+  const [ carDetail, setCarDetails ] = useState({}); // Salvar detalhes do carro obtidos pela API
+  const [ title, setTitle ] = useState(''); // Salvar alteração Nome do carro
+  const [ brand, setBrand ] = useState(''); // Salvar alteração da Marca
+  const [ price, setPrice ] = useState(''); // Salvar alteração de Preço
+  const [ age, setAge ] = useState(); // Salvar alteração do Ano
+  const { carId } = useParams(); // Parâmetro para acessar página de detalhes do carro específico
+  const history = useHistory(); // Variável para salvar navegação
 
+  // Função asyncrona para carregar a página com detalhes do carro específico
   useEffect(() => {
     async function loadCarDetails() {
       const res = await api.get(`/cars/${carId}`)
@@ -31,6 +32,7 @@ function Details() {
     loadCarDetails();
   }, []);
 
+  // Função asyncrona para confirmar a exclusão do carro na API
   async function handleDeleteCar(e) {
     let res = window.confirm('Deseja excluir anuncio?');
 
@@ -46,6 +48,7 @@ function Details() {
     };
   };
 
+  // Função asyncrona para alterar detalhes do carro
   async function handleChangeDetails(e) {
     e.preventDefault();
 
@@ -88,6 +91,7 @@ function Details() {
         </div>
       </div>
 
+      {/* Mostrar modal ou retornar Null */}
       {modalVisible ?
         <Modal onClose={() => {setModalVisible(false)}}>
           <div className="modal-page">

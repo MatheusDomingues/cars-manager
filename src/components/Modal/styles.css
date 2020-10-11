@@ -35,6 +35,7 @@
   padding: 20px;
 }
 
+/* Responsividade do Modal */
 @media (min-width: 600px) {
   .modal {
     width: 80%;

@@ -9,13 +9,13 @@ import api from '../../services/api';
 import './styles.css'
 
 function Announce() {
-  const [ title, setTitle ] = useState('');
-  const [ brand, setBrand ] = useState('');
-  const [ price, setPrice ] = useState('');
-  const [ age, setAge ] = useState();
+  const [ title, setTitle ] = useState(''); // Variável para salvar o Nome do carro
+  const [ brand, setBrand ] = useState(''); // Variável para salvar a Marca
+  const [ price, setPrice ] = useState(''); // Variável para salvar o Preço
+  const [ age, setAge ] = useState(); // Variável para salvar o Ano
+  const history = useHistory(); // Variável para salvar rotas de navegação
 
-  const history = useHistory();
-
+  // Função asyncrona para salvar formulário na API.
   async function handleNewCar(e) {
     e.preventDefault();
 
@@ -46,6 +46,7 @@ function Announce() {
           <p>Adicione as informações sobre o carro </p>
         </section>
 
+        {/* Formulário para cadastro de um novo produto */}
         <form onSubmit={handleNewCar}>
           <Input 
             type="text"

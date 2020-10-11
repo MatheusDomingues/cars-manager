@@ -9,8 +9,9 @@ import NoImage from '../../assets/images/produto-sem-imagem.png';
 import './styles.css';
 
 function Home() {
-  const [cars, setCars] = useState([]);
+  const [cars, setCars] = useState([]); // Variável para salvar carros da API
 
+  // Função asyncrona para pegar todos os itens da API e salvar na variável
   useEffect(() => {
     async function loadCars() {
       const res = await api.get('/cars');
@@ -30,9 +31,12 @@ function Home() {
           <h1>Carros novos e usados</h1>
         </div>
         <div className="cars">
+
+        {/* map() para mostrar todos itens salvos da API */}
         {cars.map(car => {
           return (
             <article className="car-item" key={car._id}>
+              {/* Rota para navegar para detalhes do carro escolhido */}
               <Link to={`/details/${car._id}`}>
                 <img src={NoImage} alt="Produto sem imagem"/>
                 <div className="details">
@@ -47,6 +51,7 @@ function Home() {
         })}
         </div>
         <div className="button">
+          {/* Rota da nevageção para anúncio */}
           <Link to="/announce">Anuncie já o seu!</Link>
         </div>
       </div>

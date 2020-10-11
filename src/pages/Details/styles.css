@@ -1,3 +1,4 @@
+/* Pagina de Detalhes */
 #page-detail {
   width: 100vw;
   height: 100vh;
@@ -13,7 +14,7 @@
   display: grid;
   justify-content: center;
   border-radius: 8px;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
   background-color: #fff;
 }
@@ -23,6 +24,7 @@
   height: 240px;
 }
 
+/* Área de detalhes do carro */
 #detail-content .details {
   display: grid;
   justify-content: center;
@@ -52,6 +54,7 @@
   color: #999;
 }
 
+/* Área de botões */
 #detail-content .buttons {
   display: grid;
   justify-content: center;
@@ -89,6 +92,7 @@
   background-color: rgba(255, 30, 30, 0.9);
 }
 
+/* Modal */
 .modal-page {
   display: flex;
   flex-direction: column;
@@ -132,6 +136,7 @@
   background-color: rgba(65, 105, 225, 0.9);
 }
 
+/* Responsividade */
 @media (min-width: 700px) {
   #detail-content img {
     height: 300px;

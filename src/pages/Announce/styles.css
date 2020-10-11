@@ -1,3 +1,4 @@
+/* Pagina de Anúncio */
 #page-announce {
   width: 100vw;
   height: 100vh;
@@ -12,7 +13,7 @@
   margin-top: 85px;
   height: 85%;
   background-color: #fff;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
   display: flex;
@@ -21,6 +22,7 @@
   align-items: center;
 }
 
+/* Área da seção do título */
 #announce-content section {
   margin: 20px 0 40px;
 }
@@ -38,6 +40,7 @@
   line-height: 2rem;
 }
 
+/* Área de Formulário */
 #announce-content form {
   display: flex;
   flex-direction: column;
@@ -57,6 +60,7 @@
   background-color: rgba(65, 105, 225, 0.9);
 }
 
+/* Responsividade */
 @media (min-width: 700px) {
   #announce-content form button {
     width: 280px;

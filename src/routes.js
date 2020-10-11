@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+// Página das Rotas
 import Home from './pages/Home';
 import Announce from './pages/Announce';
 import Details from './pages/Details';

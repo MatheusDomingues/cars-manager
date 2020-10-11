@@ -38,7 +38,7 @@
   margin-left: 8px;
 }
 
-
+/* Responsividade do cabeçalho */
 @media (min-width: 700px) {
   .page-header {
     padding: 0;
