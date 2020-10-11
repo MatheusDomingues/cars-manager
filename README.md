@@ -13,6 +13,8 @@ Entre elas, as libs:
 - react-icons
 - react-dom
 
+Utilizando a Metodologia Mobile First.
+
 ### Instalação
 
 Você precisa ter [Node.js](https://nodejs.org) em sua máquina para clonar este repositório:
