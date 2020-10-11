@@ -25,10 +25,11 @@ function Home() {
   return (
     <div id="page-home">
 
+      <PageHeader />
+
       <div id="home-content" className="container">
         <div className="title">
           <h1>Carros novos e usados</h1>
-          <Link to="/announce">Anúncie já o seu!</Link>
         </div>
         <div className="cars">
         {cars.map(car => {
@@ -46,6 +47,9 @@ function Home() {
             </article>
           );
         })}
+        </div>
+        <div className="button">
+          <Link to="/announce">Anuncie já o seu!</Link>
         </div>
       </div>
     </div>

@@ -1,0 +1,15 @@
+#page-detail {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#detail-content {
+  height: 90%;
+  margin-top: 150px;
+  display: grid;
+  justify-content: center;
+}
