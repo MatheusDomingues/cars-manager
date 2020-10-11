@@ -13,24 +13,25 @@
   margin-top: 150px;
   display: grid;
   justify-content: center;
+  text-align: center;
 }
 
-.title {
+#home-content .title {
   margin-bottom: 50px;
   display: flex;
 }
 
-.title h1 {
+#home-content .title h1 {
   font-size: 3rem;
 }
 
-.cars {
+#home-content .cars {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
 }
 
-.car-item {
+#home-content .car-item {
   max-width: 25rem;
   max-height: 50rem;
   transition: 200ms;
@@ -41,40 +42,40 @@
   transition: 200ms;
 }
 
-.car-item:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+#home-content .car-item:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-.car-item a {
+#home-content .car-item a {
   text-decoration: none;
 }
 
-.car-item img {
+#home-content .car-item img {
   width: 24.5rem;
   height: 25rem;
   border-bottom: 1px solid #c5c5c5;
 }
 
-.details {
+#home-content .details {
   text-align: left;
   padding: 5px 12px;
 }
 
-.details .car-name {
+#home-content .details .car-name {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
   color: #000;
 }
 
-.details .car-detail {
+#home-content .details .car-detail {
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 500;
   color: #999;
 }
 
-.details .car-price {
+#home-content .details .car-price {
   margin: 30px 0 5px;
   font-size: 2.4rem;
   line-height: 3rem;
@@ -82,13 +83,13 @@
   color: #666;
 }
 
-.details .car-age {
+#home-content .details .car-age {
   font-size: 1.4rem;
   font-weight: 700;
   color: #999;
 }
 
-.button {
+#home-content .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +97,7 @@
   padding-bottom: 30px;
 }
 
-.button a {
+#home-content .button a {
   background-color: rgb(65, 105, 225);
   width: 250px;
   height: 40px;
@@ -109,21 +110,21 @@
   font-size: 1.8rem;
 }
 
-.button a:hover {
+#home-content .button a:hover {
   background-color: rgba(65, 105, 225, 0.9);
 }
 
 @media (min-width: 700px) {
-  .cars {
+  #home-content .cars {
     grid-template-columns: 1fr 1fr;
   }
 
-  .car-item {
+  #home-content .car-item {
     margin-right: 30px;
     margin-bottom: 30px;
   }
 
-  .button a {
+  #home-content .button a {
     width: 300px;
     height: 50px;
     padding-top: 15px;
@@ -131,13 +132,13 @@
 }
 
 @media (min-width: 1000px) {
-  .cars {
+  #home-content .cars {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media (min-width: 1300px) {
-  .cars {
+  #home-content .cars {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

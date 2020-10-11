@@ -17,7 +17,7 @@
 }
 
 .modal .close-modal {
-  color: #fff;
+  color: #000;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.8rem;
@@ -28,7 +28,7 @@
 }
 
 .modal .close-modal:hover {
-  color: rgba(255,255,255,0.8);
+  color: rgba(0,0,0,0.5);
 }
 
 .modal-content {

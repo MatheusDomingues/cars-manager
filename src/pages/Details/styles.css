@@ -8,10 +8,92 @@
 }
 
 #detail-content {
-  height: 90%;
-  margin-top: 150px;
+  height: 100%;
+  margin-top: 170px;
   display: grid;
   justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  background-color: #fff;
+}
+
+#detail-content img {
+  margin: 0 auto;
+  height: 240px;
+}
+
+#detail-content .details {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#detail-content .details .car-name h1 {
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+}
+
+#detail-content .details .car-name h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #999;
+}
+
+#detail-content .details .car-price h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+#detail-content .details .car-price h3 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #999;
+}
+
+#detail-content .buttons {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#detail-content .buttons button {
+  width: 250px;
+  height: 40px;
+}
+
+#detail-content .buttons button:first-of-type {
+  background-color: rgb(65, 105, 225);
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: 200ms;
+}
+
+#detail-content .buttons button:first-of-type:hover {
+  background-color: rgba(65, 105, 225,0.9)
+}
+
+#detail-content .buttons button:last-of-type {
+  background-color: rgb(255, 30, 30);
+  color: #fff;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  transition: 200ms;
+}
+
+#detail-content .buttons button:last-of-type:hover {
+  background-color: rgba(255, 30, 30, 0.9);
+}
+
+.modal-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .modal-page section {
@@ -51,6 +133,44 @@
 }
 
 @media (min-width: 700px) {
+  #detail-content img {
+    height: 300px;
+  }
+  
+  #detail-content .details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #detail-content .details .car-name {
+    max-width: 250px;
+    display: grid;
+    text-align: left;
+  }
+
+  #detail-content .details .car-name h1 {
+    margin-top: 20px;
+  }
+
+  #detail-content .details .car-price {
+    max-width: 250px;
+    display: grid;
+    text-align: right;
+  }
+
+  #detail-content .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #detail-content .buttons button {
+    height: 50px;
+  }
+
+  #detail-content .buttons button:first-of-type {
+    margin-right: 50px;
+  }
+
   .modal-page form button {
     width: 280px;
     height: 40px;
