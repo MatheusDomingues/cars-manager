@@ -1,4 +1,4 @@
-#page-announce {
+#page-detail {
   width: 100vw;
   height: 100vh;
 
@@ -7,43 +7,36 @@
   align-items: center;
 }
 
-#announce-content {
-  width: 80%;
-  margin-top: 85px;
-  height: 85%;
-  background-color: #fff;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+#detail-content {
+  height: 90%;
+  margin-top: 150px;
+  display: grid;
+  justify-content: center;
 }
 
-#announce-content section {
+.modal-page section {
   margin: 20px 0 40px;
 }
 
-#announce-content section h1 {
+.modal-page section h1 {
   font-size: 3rem;
   line-height: 4rem;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-#announce-content section p {
+.modal-page section p {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
 }
 
-#announce-content form {
+.modal-page form {
   display: flex;
   flex-direction: column;
 }
 
-#announce-content form button {
+.modal-page form button {
   background-color: rgb(65, 105, 225);
   border-radius: 6px;
   height: 35px;
@@ -53,12 +46,12 @@
   transition: 200ms;
 }
 
-#announce-content button:hover {
+.modal-page button:hover {
   background-color: rgba(65, 105, 225, 0.9);
 }
 
 @media (min-width: 700px) {
-  #announce-content form button {
+  .modal-page form button {
     width: 280px;
     height: 40px;
     margin-top: 20px;

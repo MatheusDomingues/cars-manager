@@ -20,8 +20,6 @@ function Home() {
     loadCars();
   }, []);
 
-  console.log(cars);
-
   return (
     <div id="page-home">
 
@@ -34,8 +32,8 @@ function Home() {
         <div className="cars">
         {cars.map(car => {
           return (
-            <article className="car-item" key={car.id}>
-              <Link>
+            <article className="car-item" key={car._id}>
+              <Link to={`/details/${car._id}`}>
                 <img src={NoImage} alt="Produto sem imagem"/>
                 <div className="details">
                   <h2 className="car-name">{car.title}</h2>

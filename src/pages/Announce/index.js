@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import PageHeader from '../../components/PageHeader';
+import Input from '../../components/Input';
 
 import api from '../../services/api';
 
 import './styles.css'
 
 function Announce() {
-  const [title, setTitle] = useState('');
-  const [brand, setBrand] = useState('');
-  const [price, setPrice] = useState('');
-  const [age, setAge] = useState();
+  const [ title, setTitle ] = useState('');
+  const [ brand, setBrand ] = useState('');
+  const [ price, setPrice ] = useState('');
+  const [ age, setAge ] = useState();
 
   const history = useHistory();
 
@@ -30,7 +31,7 @@ function Announce() {
 
       history.push('/');
     } catch (err) {
-      alert('Erro ao cadastrar carro. Tente novamente!');
+      alert('Erro ao anunciar carro. Tente novamente!');
     };
   };
 
@@ -46,32 +47,32 @@ function Announce() {
         </section>
 
         <form onSubmit={handleNewCar}>
-          <input 
+          <Input 
             type="text"
             placeholder="Nome do carro"
             value={title}
             onChange={e => setTitle(e.target.value)}
           />
-          <input 
+          <Input 
             type="text"
             placeholder="Marca"
             value={brand}
             onChange={e => setBrand(e.target.value)}
           />
-          <input 
+          <Input 
             type="text"
             placeholder="Preço em Reais"
             value={price}
             onChange={e => setPrice(e.target.value)}
           />
-          <input 
+          <Input 
             type="number"
             placeholder="Ano"
             value={age}
             onChange={e => setAge(e.target.value)}
           />
 
-          <button type="submit">Cadastrar</button>
+          <button type="submit">Anunciar</button>
         </form>
       </div>
     </div>
